@@ -1,15 +1,37 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { Grid} from "@mui/material"
+import { Grid , Button} from "@mui/material"
+import { useState } from "react";
+import SendIcon from '@mui/icons-material/Send';
+import { sendEmail } from '';
 
 
 export function Contactme() {
-  const [value, setValue] = React.useState('Controlled');
+ 
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState("");
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
+
+  const nameChange = (e) => {
+    setName(e.target.value);
   };
+
+  const messageChange = (e) => {
+    setMessage(e.target.value);
+  }; 
+
+  const emailChange = (e) => {
+    setEmail(e.target.value);
+  }; 
+
+  const handleSend = ()=>{
+    
+sendEmail(name,message,email)
+}
+console.log(name,message,email);
+
 
   return (
 
@@ -21,7 +43,7 @@ export function Contactme() {
      spacing={1}
      p={5}
      sx={{bgcolor:"#8BD0CA"}}
-     id="study"
+     id="contact"
      m={4}
     >
      <Grid item xs={8}>
@@ -38,8 +60,7 @@ export function Contactme() {
           id="outlined-multiline-flexible"
           label="Nombre"
           maxRows={4}
-          value={value}
-          onChange={handleChange}
+          onChange={nameChange}
           multiline
         />
         <TextField
@@ -47,25 +68,30 @@ export function Contactme() {
           label="e-mail"
           placeholder="e-mail"
           multiline
+          onChange={emailChange}
+          
         />
         <TextField
           id="outlined-multiline-static"
           label="Mensaje"
           multiline
           rows={4}
-          defaultValue="Default Value"
+          placeholder="Escribe aqui tu mensaje"
+          onChange={messageChange}
         />
+        <Button variant="outlined" 
+                type="submit"
+                color="primary"
+                fullWidth
+                onClick={handleSend} endIcon={<SendIcon />}>
+  Enviar
+</Button>
       </div>
     </Box>
 
 
      </Grid>
     
-</Grid>
-
-
-
-
-    
+</Grid>    
   );
 }
