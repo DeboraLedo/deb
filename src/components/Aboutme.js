@@ -4,16 +4,15 @@ import { Grid, Typography } from "@mui/material"
 export function Aboutme (){
     return(<>
         <Grid
-       container
-       direction="row"
-       justifyContent="space-evenly"
-       alignItems="center"
-        spacing={4}
-        pt={5}
-        pb={5}
-        m={4}
-        sx={{bgcolor:"#f5f7f9"}} 
-        id="aboutme">
+             container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+         spacing={1}
+         p={10}
+         sx={{ bgcolor: "#f5f7f9" }}
+         m={4}
+        >
 
         <Grid item xs={8}>
         <Typography fontFamily="Helvetica Neue" variant="body1" align="center" gutterBottom={true} >Mi nombre es Debora Ledo y soy Full-Stack developer, madre y emprendedora, entre otras cosas, pero estas ultimas profesiones son las que ocupan la mayor parte de mi día. 

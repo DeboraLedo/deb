@@ -18,7 +18,7 @@ export function Name() {
         <Grid item sm={5} xs={8}>
           <img src={nombre} alt="some file" height="100%" width="100%" />
           <a href="/DeboraLedoCV.pdf" download style={{ textDecoration: "none" }}>
-            <Button variant="outlined" style={{ color: " #FB7875" }}>
+            <Button id="aboutme" variant="outlined" style={{ color: " #FB7875" }}>
               Descargar cv
             </Button>
           </a>

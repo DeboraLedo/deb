@@ -4,13 +4,12 @@ import study from "/home/debora/proyectos/deb/src/assets/study.png"
 export function Study (){
     return(<>
         <Grid
-       container
-       direction="row"
-       justifyContent="space-evenly"
-       alignItems="center"
-        spacing={1}
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
         p={5}
-        sx={{bgcolor:"#8BD0CA"}}
+        sx={{ bgcolor: "#8BD0CA" }}
         id="study"
         m={4}
        >

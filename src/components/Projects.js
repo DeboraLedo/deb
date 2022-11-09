@@ -1,21 +1,33 @@
 import { Grid } from "@mui/material"
+import CardMedia from "../commons/Card"
 
 
 export function Projets (){
     return(<>
-        <Grid
-       container
-       direction="row"
-       justifyContent="space-evenly"
-       alignItems="center"
-        spacing={3}
+       <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
         p={5}
-        sx={{bgcolor:"#f5f7f9"}} 
-        id="projects">
+        sx={{ bgcolor: "#050542" }}
+        id="projects"
+        m={4}
+      >
 
-        <Grid item xs={8}> </Grid>
-
+     <CardMedia/>
+     <CardMedia/>
+     <CardMedia/>
+     <CardMedia/>
       </Grid>
+      
+     
+        
+        
+        
+     
+
+ 
      
      </>
     )
