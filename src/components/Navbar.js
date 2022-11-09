@@ -21,7 +21,7 @@ export function Navbar (){
               sx={{ mr: 2 }}
             >
             </IconButton>
-            <a href="#name" > <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}style={{ color: "white", textDecoration: "none" }}>
+            <a href="#name" style={{ color: "white", textDecoration: "none" }} > <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Debora Ledo
             </Typography></a>
            

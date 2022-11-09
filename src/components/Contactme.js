@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 import { Grid , Button} from "@mui/material"
 import { useState } from "react";
 import SendIcon from '@mui/icons-material/Send';
-import { sendEmail } from '';
+
 
 
 export function Contactme() {
@@ -27,8 +27,7 @@ export function Contactme() {
   }; 
 
   const handleSend = ()=>{
-    
-sendEmail(name,message,email)
+    //sendEmail(name,message,email)
 }
 console.log(name,message,email);
 
