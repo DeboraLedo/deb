@@ -1,8 +1,11 @@
-import { Grid } from "@mui/material"
-import CardMedia from "../commons/Card"
+
+import { Card , Button, Box, Typography, Grid, Link} from '@mui/material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import data from "../data/projets"
 
 
 export function Projets (){
+  console.log(data);
     return(<>
        <Grid
         container
@@ -14,11 +17,45 @@ export function Projets (){
         id="projects"
         m={4}
       >
+{data?.map((data)=>{return(
+     <Card variant="outlined" sx={{ width: 320, height: 500 ,p:2, m:2}} >
+     <Typography level="h2" fontSize="md" sx={{ mb: 0.5 ,fontWeight: 600 }}>
+       {data.title}
+     </Typography>
 
-     <CardMedia/>
-     <CardMedia/>
-     <CardMedia/>
-     <CardMedia/>
+     <Typography level="body2" height={43} >{data.stack}</Typography>
+
+     <Link href={data.linkVideo} underline="none" target="_blank" rel="noreferrer">
+     <Button
+     style={{textDecoration: "none", color: "#FB7875"}}
+         variant="solid"
+         sx={{ ml: 'auto', fontWeight: 600}}><Typography textDecoration="none">Demo</Typography>          
+       <YouTubeIcon />
+       </Button>
+       </Link>
+       <img
+         src={data.image}
+         alt=""
+         height= "180px" 
+       />
+     <Box sx={{ display: 'flex' }}>
+       <div>
+         <Typography sx={{fontWeight: 600 }}>Duración: {data.time}</Typography>
+         <Typography height={200} >{data.description} </Typography>
+       </div>
+       <Link href={data.linkGitHub} underline="none" target="_blank" rel="noreferrer">
+       <Button
+         variant="solid"
+         sx={{ ml: 'auto', fontWeight: 600,color: "#FB7875" }} >
+         GitHub
+       </Button>
+       </Link>
+
+     </Box>
+   </Card>)})
+
+}
+    
       </Grid>
       
      
