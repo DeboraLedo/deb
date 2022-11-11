@@ -1,6 +1,6 @@
 import { Grid, Button } from "@mui/material";
-import url from "/home/debora/proyectos/deb/src/assets/nombre2.png";
-import nombre from "/home/debora/proyectos/deb/src/assets/nombre.png";
+import url from "../assets/nombre2.png";
+import nombre from "../assets/nombre.png";
 
 export function Name() {
   return (
