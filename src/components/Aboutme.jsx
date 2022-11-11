@@ -16,7 +16,7 @@ export function Aboutme (){
 
         <Grid item xs={8}>
         <Typography fontFamily="Helvetica Neue" variant="body1" align="center" gutterBottom={true} >Mi nombre es Debora Ledo y soy Full-Stack developer, madre y emprendedora, entre otras cosas, pero estas ultimas profesiones son las que ocupan la mayor parte de mi día. 
-Soy graduada del bootcamp de Plataforma 5, un curso super intensivo de 10 hs diarias en donde incorporé los conceptos fundamentales de programacion volcándolos en la práctica, más de 800 hs de codeo con modalidad pair programing y grupal con el método Scrum en donde aprendí tecnologías como React, Node, Express, Mongo, Pstgress y otras.</Typography></Grid>
+Soy graduada del bootcamp de Plataforma 5, un curso super intensivo de 10 hs diarias en donde incorporé los conceptos fundamentales de programacion volcándolos en la práctica, más de 800 hs de codeo con modalidad pair programing y grupal con el método Scrum en donde aprendí tecnologías como React, Node, Express, Mongo, Postgress y otras.</Typography></Grid>
 
 <Grid item xs={8}><Typography fontFamily="Helvetica Neue" variant="body1" align="center" gutterBottom={true} >Mis trabajos anteriores como diseñadora de indumentaria me dieron la capacidad de relacionar, mediar y liderar a personas. 
 Realicé varios emprendimientos en el rubro textil que disfruté muchísimo, los desafíos diarios, las planificaciones, sortear obstaculos, el trabajo conjunto con proveedores y, sobre todo, la relación con los clientes.</Typography></Grid>
