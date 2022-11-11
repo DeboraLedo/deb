@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, Grid, Typography, Button } from "@mui/material";
+import { AppBar, Box, Grid, Typography, Button } from "@mui/material";
 
 export function Navbar() {
   return (
@@ -10,7 +10,7 @@ export function Navbar() {
             <Grid  item >
               <a href="#name"style={{ color: "white", textDecoration: "none" }}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  Debora Ledo
+                  DÉBORA LEDO
                 </Typography>
               </a>
             </Grid>
