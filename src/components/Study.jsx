@@ -4,17 +4,17 @@ import study from "/home/debora/proyectos/deb/src/assets/study.png"
 export function Study (){
     return(<>
         <Grid
-       container
-       direction="row"
-       justifyContent="space-evenly"
-       alignItems="center"
-        spacing={1}
+     
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
         p={5}
-        sx={{bgcolor:"#8BD0CA"}}
-        id="study"
+        sx={{ bgcolor: "#8BD0CA" }}
+        
         m={4}
        >
-        <Grid item sm={4} xs={8}><img src={study} alt="some file"  height='130%'
+        <Grid item  sm={4} xs={8}><img src={study} alt="some file"  height='130%'
 width='130%'/></Grid>
         <Grid item sm={5} xs={8}>
         <Typography variant="body1" align="left" gutterBottom={true} fontFamily="Helvetica Neue" >
