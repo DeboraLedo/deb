@@ -1,5 +1,5 @@
 import { Grid, Typography} from "@mui/material"
-import study from "/home/debora/proyectos/deb/src/assets/study.png"
+import study from "../assets/study.png"
 
 export function Study (){
     return(<>
